@@ -24,11 +24,18 @@ For the sake of this tutorial, we want to operate from a known initial state. Th
 
 You can then use the following command to start the test network:
 
+
 ```
-./network.sh up createChannel
+./network.sh up
 ```
 
-The `createChannel` command creates a channel named `mychannel` with two channel members, Org1 and Org2. The command also joins a peer that belongs to each organization to the channel. If the network and the channel are created successfully, you can see the following message printed in the logs:
+The `createChannel` command creates a channel named `mychannel` with two channel members, Org1 and Org2. The command also joins a peer that belongs to each organization to the channel. 
+
+```
+./network.sh createChannel
+```
+
+If the network and the channel are created successfully, you can see the following message printed in the logs:
 
 ```
 ========= Channel successfully joined ===========
